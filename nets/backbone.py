@@ -109,7 +109,7 @@ class Backbone(nn.Module):
             C2f(int(base_channels * 16 * deep_mul), int(base_channels * 16 * deep_mul), base_depth, True),
             SPPF(int(base_channels * 16 * deep_mul), int(base_channels * 16 * deep_mul), k=5)
         )
-        
+        self.dark6 = Conv(256,256,3,2)
         if pretrained:
             url = {
                 "n" : 'https://github.com/bubbliiiing/yolov8-pytorch/releases/download/v1.0/yolov8_n_backbone_weights.pth',
