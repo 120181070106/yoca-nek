@@ -164,4 +164,7 @@ class YoloBody(nn.Module):
 
 #------------------------(train.ipynb)-----------------#
         "model_path"        : '无注733.pth',#自训的
+
+#--------------------(gradcam.ipynb)--------------#
+        #生成图片（默认就是voc文件夹中的4.jpg）经网络某显著层时的梯度热力图于result.png
 ```
